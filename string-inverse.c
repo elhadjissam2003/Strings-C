@@ -10,5 +10,7 @@ int main() {
 
      }
 
+ //Method2
+ printf("%s",strrev(c));
       return 0;
 }
