@@ -1,0 +1,25 @@
+//Un programme qui vérifie si une chaîne est palindrome ou non.
+ #include <stdio.h>
+#include <string.h>
+
+int main() {
+     char c[140];
+      puts("Donner une chaine :");
+     gets(c);
+
+     int mid=strlen(c)/2;
+     int pal=1;
+     for(int i=0;i<mid;i++){
+        if(c[i]!=c[strlen(c)-1-i]){
+            pal=0;
+        }
+     }
+     if(pal==1){
+        printf("La chaine est palindrome");
+     }else{
+                 printf("La chaine n'est palindrome");
+
+     }
+
+      return 0;
+}
